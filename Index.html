@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1c">
+  <meta name="description" content="Vizion Solutions offers creative digital services, graphics design, video editing and website development.">
+  <title>Vizion Solutions | Create Without Limits</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080d1c;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1c2943;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: #35d9ff;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 85px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: radial-gradient(ellipse at top right, #142e53, #080d1c 65%);
+    }
+
+    .tag {
+      color: #35d9ff;
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 9vw, 60px);
+      line-height: 1.12;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: #35d9ff;
+    }
+
+    .hero p {
+      color: #bdc8dc;
+      max-width: 500px;
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #35d9ff;
+      color: #07101e;
+      padding: 14px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+    }
+
+    section {
+      padding: 55px 22px;
+    }
+
+    h2 {
+      font-size: 29px;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      color: #aebbd1;
+      margin-bottom: 28px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .service {
+      padding: 23px;
+      border: 1px solid #243450;
+      background: #10192b;
+      border-radius: 13px;
+    }
+
+    .service .icon {
+      font-size: 30px;
+    }
+
+    .service h3 {
+      margin: 10px 0;
+    }
+
+    .service p {
+      color: #aebbd1;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #0d1526;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #bdc8dc;
+      margin: 12px 0 25px;
+    }
+
+    footer {
+      padding: 25px 15px;
+      text-align: center;
+      border-top: 1px solid #1c2943;
+      color: #8d9ab0;
+      font-size: 13px;
+    }
+
+    @media (min-width: 650px) {
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      header, section, .hero {
+        padding-left: max(35px, calc((100% - 1000px) / 2));
+        padding-right: max(35px, calc((100% - 1000px) / 2));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">VIZION SOLUTIONS</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="tag">YOUR IDEAS. OUR CREATIVITY.</div>
+      <h1>We Turn Your<br>Ideas Into <span>Reality.</span></h1>
+      <p>
+        Your digital partner for creative designs, video editing,
+        websites and smart technology solutions.
+      </p>
+      <a class="button" href="#services">Explore Our Services →</a>
+    </section>
+
+    <section id="services">
+      <h2>What We Do</h2>
+      <p class="intro">
+        Everything you need to build your digital presence.
+      </p>
+
+      <div class="services">
+        <article class="service">
+          <div class="icon">🎨</div>
+          <h3>Graphics Design</h3>
+          <p>Eye-catching posters, flyers, banners and social media designs.</p>
+        </article>
+
+        <article class="service">
+          <div class="icon">🎬</div>
+          <h3>Video Editing</h3>
+          <p>Engaging videos and creative edits for your content.</p>
+        </article>
+
+        <article class="service">
+          <div class="icon">💻</div>
+          <h3>Website Development</h3>
+          <p>Modern, responsive websites for brands and businesses.</p>
+        </article>
+
+        <article class="service">
+          <div class="icon">📝</div>
+          <h3>Typing & Documents</h3>
+          <p>Neatly prepared documents and professional typing services.</p>
+        </article>
+
+        <article class="service">
+          <div class="icon">📱</div>
+          <h3>Digital Solutions</h3>
+          <p>Practical technology assistance for your digital needs.</p>
+        </article>
+
+        <article class="service">
+          <div class="icon">🚀</div>
+          <h3>Creative Projects</h3>
+          <p>Bring your next idea to life with our creative approach.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Why Vizion Solutions?</h2>
+      <p class="intro">
+        We believe every great idea deserves a chance to shine.
+        Our goal is to make digital creativity and technology
+        more accessible, one project at a time.
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Let's Build Something Great</h2>
+      <p>Have a project or an idea? We'd love to hear about it.</p>
+      <a class="button" href="mailto:vizionsolutions1234@gmail.com">
+        Contact Us
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Vizion Solutions. All rights reserved.
+  </footer>
+
+</body>
+</html>
